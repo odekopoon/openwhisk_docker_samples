@@ -1,0 +1,7 @@
+[package]
+name = "openwhisk_rust_example"
+version = "0.0.1"
+
+[dependencies]
+nickel = "*"
+rustc-serialize = "*"
