@@ -1,0 +1,13 @@
+{application, openwhisk_erl_cowboy,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy
+                 ]},
+  {mod, { openwhisk_erl_cowboy_app, []}},
+  {env, [{http_port, 8080}]}
+ ]}.
