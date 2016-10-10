@@ -5,4 +5,7 @@ WORKDIR /usr/src/app
 
 RUN ["lein", "deps"]
 
-CMD ["lein", "run", "-m", "openwhisk-clojure-example.core"]
+RUN ["touch", ".lein-fast-trampoline"]
+#ENV LEIN_FAST_TRAMPOLINE y
+
+CMD ["lein", "trampoline", "run", "-m", "openwhisk-clojure-example.core"]
